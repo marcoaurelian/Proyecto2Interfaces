@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+    background: #01172F;
+}
+body{
+    background: #FAF9F9;
+}
+
+/*MENU*/
+.menu ul{
+    display:inline-flex;
+    margin: 3%
+}
+.menu ul li{
+    font-size: 2vw;
+    list-style-type: none;
+    margin: 0 1vw;
+    color:  #FAF9F9;
+    cursor: pointer;
+    display: block;
+    transition: 0.7s;
+}
+.menu ul li:hover {
+    transform: scale(1.2);
+}
+.logo img{
+    width: 3vw;
+    transform:scale(300%);
+    margin-top: -7px;
+    margin-right: 48px;
+}
+/*FIN MENU*/
+
+/*Botones de signup y login. Están separados para poder
+tener elementos de style diferentes al resto de la barra*/
+/*Efecto de pop-up al pasar el ratón por encima*/
+.botones ul li :hover{
+    transform: scale(1.2);
+}
+.signup-btn{
+    transition: 0.7s; /*Transición para el efecto de pop-up*/
+    font-size: 2vw;
+    top:2.5vw;
+    right:4vw;
+    position:absolute;
+    text-decoration: none;
+    color: black;
+    border:2px solid transparent;
+    border-radius:20px ; 
+    background-image: linear-gradient(#FFD6BA,#FFD6BA);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signup-btn span{
+    display: block;
+    padding: 0.5vw 1vw;
+}
+.login-btn{
+    transition: 0.7s;
+    font-size: 2vw;
+    top:2.5vw;
+    right:15vw;
+    position:absolute;
+    text-decoration: none;
+    color: black;
+    border:3px solid transparent;
+    border-radius:20px ;
+    background-image: linear-gradient(#FFD6BA,#FFD6BA);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.login-btn span{
+    display: block;
+    padding: 0.5vw 1vw;
+}
+/*FIN BOTONES LOGIN SIGNUP*/
+
+/*Barra de búsqueda*/
+
+.topnav {
+    margin-bottom: 100px;
+    margin-left: 30%;
+    width: 20%;
+    background-color: #FFD6BA;
+    width: 35%;
+    height: 4vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.topnav input[type=text] {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+::placeholder {
+    font-size: 2vw;
+    color: #555B6E;
+    opacity: 0.7; 
+}
+button {
+    all: unset;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+}
+
+/*Fin barra de búsqueda*/
+
+/*MAPA*/
+.mapadiv{
+    display: inline-flex;
+    background: transparent;
+    position: relative;
+    width: 70%;
+    margin-top: -7%;
+    margin-left: 10%;
+}
+.mapadiv path{
+    fill: #B2E6D4;
+    stroke: black;
+    stroke-width: 1px;
+}
+.mapadiv :hover{
+    fill:#01172F;
+}
+/*FIN MAPA*/
+
+header p {
+    background: #689689;
+    margin: 0 0 5% 0;
+    padding: 4vw;
+    text-align: center;
+    color: #01172F;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+
+
+/*FOOTER*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.footer {
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #01172F;
+    background-color: #B2E6D4;
+    }
+    
+    .footer > * {
+    flex:  1 100%;
+    }
+    
+    .l-footer {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    }
+    
+    h2 {
+    font-weight: 400;
+    font-size: 15px;
+    }
+    
+    .footer ul {
+    list-style: none;
+    padding-left: 0;
+    }
+    
+    .footer li {
+    line-height: 2em;
+    }
+    
+    .footer a {
+    text-decoration: none;
+    }
+    
+    .r-footer {
+    display: flex;
+    flex-flow: row wrap;
+    }
+    
+    .r-footer > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+    }
+    
+    .box a {
+    color: #999;
+    }
+    
+    .h-box {
+    column-count: 2;
+    column-gap: 1.25em;
+    }
+    
+    .b-footer {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+    }
+    
+    .l-footer p {
+    padding-right: 20%;
+    color: #999;
+    }   
+    
+    @media screen and (min-width: 600px) {
+    .r-footer > * {
+    flex: 1;
+    }
+    
+    .features {
+    flex-grow: 2;
+    }
+    
+    .l-footer {
+    flex: 1 0px;
+    }
+    
+    .r-footer {
+    flex: 2 0px;
+    }
+    }
+    
+
+/*EXPERIENCIAS*/
+.exp img{
+    width: 20vw;
+}
+.exp body {
+    margin: 0;
+    display: grid;
+    font-size: 2vw;
+}
+.exp{
+    float: left;
+}
+.experiencias1,.experiencias2,.experiencias3{
+    float: left;
+    width: 30vw;
+    margin-left: 2vw;
+    padding: 1vw;
+}
+.exp:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.exp p{
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+}
+.exp img{
+  display: block;
+  margin: 1vw auto 1vw auto;
+}
+.experiencias1 h4,.experiencias2 h4, .experiencias3 h4,.exp h3{
+    text-align: center;
+    font-family:Helvetica,serif;
+    font-size: 2vw;
+    color: #01172F;
+}
+.exp h3{
+    padding: 1vw;
+    font-size: 3vw;
+}
+.Sud{
+    padding-top:3.65vw;
+}
+.Bar{
+    padding-top:1.55vw;
+}
+.Sui p{
+    padding-bottom:4.3vw;
+}
+
