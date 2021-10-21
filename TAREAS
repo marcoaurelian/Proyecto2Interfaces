@@ -1,6 +1,6 @@
 En la cabecera:
 
-- [ ]  Al pinchar el botón para iniciar sesión, se abrirá una ventana pop up. Una ventana pop up o emergente es un elemento que al abrirse se superpone a la página actual 
+o Al pinchar el botón para iniciar sesión, se abrirá una ventana pop up. Una ventana pop up o emergente es un elemento que al abrirse se superpone a la página actual 
 y su tamaño depende del contenido. En la esquina superior derecha de la ventana pop up, habrá que añadir un botón para cerrar la misma. La ventana emergente contendrá 
 un formulario pidiendo el nombre de usuario y la contraseña, y un botón. 
 
