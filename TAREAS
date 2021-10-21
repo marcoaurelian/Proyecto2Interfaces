@@ -2,22 +2,23 @@ En la cabecera:
 
 o Al pinchar el botón para iniciar sesión, se abrirá una ventana pop up. Una ventana pop up o emergente es un elemento que al abrirse se superpone a la página actual 
 y su tamaño depende del contenido. En la esquina superior derecha de la ventana pop up, habrá que añadir un botón para cerrar la misma. La ventana emergente contendrá 
-un formulario pidiendo el nombre de usuario y la contraseña, y un botón. 
+un formulario pidiendo el nombre de usuario y la contraseña, y un botón.  !!MARCO!!
 
 o Al pinchar el botón, se buscará una cookie con los datos introducidos. Si no existe la cookie, se le notificará al usuario que el correo electrónico especificado no 
 está dado de alta. Si ya existe la cookie, se cerrará la ventana pop up y se cambiarán los botones para iniciar sesión y darse de alta por una imagen (la imagen de perfil
 del usuario o una por defecto si no está disponible), un texto (el nombre del usuario) y un menú de opciones. Entre las opciones, se incluirán: mi perfil, mis experiencias,
-y cerrar sesión.
+y cerrar sesión.  !!MARCO!!
 
 o La opción mi perfil abrirá una ventana pop up con la información de la cuenta del usuario ya introducida en el formulario para darse de alta (cómo se explica a continuación).
-El usuario podrá modificar su nombre de usuario, la foto de perfil y sus intereses. Al guardar los cambios realizados, se tendrán que reflejar también en la cookie correspondiente.
+El usuario podrá modificar su nombre de usuario, la foto de perfil y sus intereses. Al guardar los cambios realizados, se tendrán que reflejar también en la cookie
+correspondiente. !!MARCO!!
 
 o La opción mis experiencias abrirá una ventana pop up con un listado de experiencias introducidas por el usuario y un botón para añadir una nueva. Para añadir una nueva, 
 en la misma ventana pop up se pedirá un titulo, una descripción, un lugar y una foto. La nueva experiencia se añadirá a la cabeza del listado. Todas las experiencias podrán 
-borrarse.
+borrarse. !!MARCO!!
 
 o La opción cerrar sesión abrirá una ventana pop-up preguntando confirmación antes de cerrar la sesión actual. En caso afirmativo, se volverá al diseño de la cabecera con los
-botones para iniciar sesión y darse de alta.
+botones para iniciar sesión y darse de alta.  !!MARCO!!
 
 o Al pinchar el botón para darse de alta, se abrirá una ventana pop up con un formulario constituido por los siguientes campos, algunos de ellos obligatorios y 
 con un cierto formato según lo que se especifica en los siguientes puntos.
