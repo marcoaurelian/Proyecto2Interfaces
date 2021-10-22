@@ -1,17 +1,36 @@
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+const openModalButtons = document.querySelectorAll('[data-modal-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+openModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active')
+  modals.forEach(modal => {
+    closeModal(modal)
+  })
+})
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal) {
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modal) {
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classList.remove('active')
 }

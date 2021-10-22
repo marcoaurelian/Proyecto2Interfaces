@@ -37,23 +37,13 @@ body{
     margin-top: -7px;
     margin-right: 48px;
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
 /*FIN MENU*/
 
 /*Botones de signup y login. Están separados para poder
 tener elementos de style diferentes al resto de la barra*/
 /*Efecto de pop-up al pasar el ratón por encima*/
+
 .botones ul li :hover{
     transform: scale(1.2);
 }
@@ -75,6 +65,7 @@ tener elementos de style diferentes al resto de la barra*/
     display: block;
     padding: 0.5vw 1vw;
 }
+
 .login-btn{
     transition: 0.7s;
     font-size: 2vw;
@@ -94,7 +85,71 @@ tener elementos de style diferentes al resto de la barra*/
     padding: 0.5vw 1vw;
 }
 /*FIN BOTONES LOGIN SIGNUP*/
-
+/*Login popup*/
+*, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+  }
+  
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+  }
+  
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .modal-body {
+    padding: 10px 15px;
+  }
+  
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
 /*Barra de búsqueda*/
 
 .topnav {
