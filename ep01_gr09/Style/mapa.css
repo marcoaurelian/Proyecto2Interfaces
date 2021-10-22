@@ -7,7 +7,7 @@ header{
     width: 100%;
     height: 100%;
     margin: auto;
-    text-align: left;
+    text-align: left;   
     background: #01172F;
 }
 body{
@@ -86,9 +86,7 @@ tener elementos de style diferentes al resto de la barra*/
 }
 /*FIN BOTONES LOGIN SIGNUP*/
 /*Login popup*/
-*, *::after, *::before {
-    box-sizing: border-box;
-  }
+
   
   .modal {
     position: fixed;
