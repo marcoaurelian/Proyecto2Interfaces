@@ -67,6 +67,7 @@ tener elementos de style diferentes al resto de la barra*/
 }
 
 .login-btn{
+    cursor: pointer;
     transition: 0.7s;
     font-size: 2vw;
     top:2.5vw;
@@ -109,11 +110,12 @@ tener elementos de style diferentes al resto de la barra*/
     padding: 10px 15px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     border-bottom: 1px solid black;
   }
   
   .modal-header .title {
+    
     font-size: 1.25rem;
     font-weight: bold;
   }
@@ -130,7 +132,29 @@ tener elementos de style diferentes al resto de la barra*/
   .modal-body {
     padding: 10px 15px;
   }
-  
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  button:hover {
+    opacity: 0.8;
+  }
+
   #overlay {
     position: fixed;
     opacity: 0;
