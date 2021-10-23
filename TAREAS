@@ -2,7 +2,7 @@ En la cabecera:
 
 o Al pinchar el botón para iniciar sesión, se abrirá una ventana pop up. Una ventana pop up o emergente es un elemento que al abrirse se superpone a la página actual 
 y su tamaño depende del contenido. En la esquina superior derecha de la ventana pop up, habrá que añadir un botón para cerrar la misma. La ventana emergente contendrá 
-un formulario pidiendo el nombre de usuario y la contraseña, y un botón.  !!MARCO!!
+un formulario pidiendo el nombre de usuario y la contraseña, y un botón.  !!MARCO!! HECHO
 
 o Al pinchar el botón, se buscará una cookie con los datos introducidos. Si no existe la cookie, se le notificará al usuario que el correo electrónico especificado no 
 está dado de alta. Si ya existe la cookie, se cerrará la ventana pop up y se cambiarán los botones para iniciar sesión y darse de alta por una imagen (la imagen de perfil
