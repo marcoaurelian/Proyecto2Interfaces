@@ -125,6 +125,7 @@ tener elementos de style diferentes al resto de la barra*/
     border: none;
     outline: none;
     background: none;
+    color: black;
     font-size: 1.25rem;
     font-weight: bold;
   }
@@ -142,7 +143,7 @@ tener elementos de style diferentes al resto de la barra*/
     box-sizing: border-box;
   }
   
-  button {
+  .modal-body .login{
     background-color: #04AA6D;
     color: white;
     padding: 14px 20px;
@@ -150,7 +151,7 @@ tener elementos de style diferentes al resto de la barra*/
     cursor: pointer;
     width: 100%;
   }
-
+  
   button:hover {
     opacity: 0.8;
   }
