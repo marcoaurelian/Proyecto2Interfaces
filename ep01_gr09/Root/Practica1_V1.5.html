@@ -266,20 +266,20 @@
         </header>
 
         <!--EXPERIENCIAS-->
-        <div class="exp">
+        <div class="exp" id="draggable" ondrop="drop(event)" ondragover="allowDrop(event)">
             <!--<div class="experiencias1">-->
               <!--<h3>España</h3>-->
-              <div class="cell" id="Mad">
+              <div class="cell" id=" exp Mad" draggable="true" ondragstart="drag(event)">
                 <h4>Madrid</h4>
-                <img src="../Imagenes/madrid.jpg" alt="madrid">
+                <img src="../Imagenes/madrid.jpg" alt="madrid" >
                 <p>Descubre Madrid y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-              <div class="cell" id="Bar">
+              <div class="cell" id=" exp Bar" draggable="true" ondragstart="drag(event)">
                 <h4>Barcelona</h4>
                 <img src="../Imagenes/barcelona.jpg" alt="barcelona">
                 <p>Descubre Barcelona y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-              <div class="cell" id="Mal">
+              <div class="cell" id="exp Mal" draggable="true" ondragstart="drag(event)">
                 <h4>Málaga</h4>
                 <img src="../Imagenes/malaga.jpg" alt="malaga">
                 <p>Descubre Málaga y su entorno<br>con una gran variedad de aventuras y emociones.</p>
@@ -287,17 +287,17 @@
             <!--</div>-->
             <!--<div class="experiencias2">-->
               <!--<h3>Europa</h3>-->
-              <div class="cell" id="Din">
+              <div class="cell" id=" exp Din" draggable="true" ondragstart="drag(event)">
                 <h4>Dinamarca</h4>
                 <img src="../Imagenes/dinamarca.jpg" alt="dinamarca">
                 <p>Descubre Dinamarca y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-              <div class="cell" id="Sui">
+              <div class="cell" id="exp Sui" draggable="true" ondragstart="drag(event)">
                 <h4>Suiza</h4>
                 <img src="../Imagenes/suiza.jpg" alt="suiza">
                 <p>Descubre Suiza y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-              <div class="cell" id="Cro">
+              <div class="cell" id="exp Cro" draggable="true" ondragstart="drag(event)">
                 <h4>Croacia</h4>
                 <img src="../Imagenes/croacia.jpg" alt="croacia">
                 <p>Descubre Croacia y su entorno<br>con una gran variedad de aventuras y emociones.</p>
@@ -305,23 +305,21 @@
             <!--</div>-->
             <!--<div class="experiencias3">-->
               <!--<h3>Resto del mundo</h3>-->
-              <div class="cell" id="Tai">
+              <div class="cell" id="exp Tai" draggable="true" ondragstart="drag(event)">
                 <h4>Tailandia</h4>
                 <img src="../Imagenes/tailandia.jpg" alt="tailandia">
                 <p>Descubre Tailandia y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-              <div class="cell" id="Sud">
+              <div class="cell" id="exp Sud" draggable="true" ondragstart="drag(event)">
                 <h4>Sudáfrica</h4>
                 <img src="../Imagenes/sudafrica.jpg" alt="sudafrica">
                 <p>Descubre Sudáfica y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-              <div class="cell" id="Bra">
+              <div class="cell" id="exp Bra" draggable="true" ondragstart="drag(event)">
                 <h4>Brasil</h4>
                 <img src="../Imagenes/brasil.jpg" alt="brasil">
                 <p>Descubre Brasil y su entorno<br>con una gran variedad de aventuras y emociones.</p>
               </div>
-            <!--</div>-->
-          </div>
 
         </div>
         <!--FOOTER-->
@@ -361,6 +359,8 @@
             </div>
         </footer>
     <script src="../Script.js"></script>
+    <script src="../jquery-3.6.0.js"></script>
+    <script src="../jquery-ui-1.13.0/jquery-ui.min.js"></script>
     </body>
 
 </html>

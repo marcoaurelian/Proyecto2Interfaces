@@ -50,3 +50,47 @@ function disableSubmit() {
       }
 
   }
+  $( function drag() {
+  $( ".exp" ).draggable({
+  cursor:'move',
+  helper:'clone',
+    } );
+} );
+
+  $(function drop(){
+    $("#droppable").droppable({
+      drop:function (event, ui) {
+        ui.draggable.clone().appendTo($(this)).draggable();
+        }
+    } );
+  } );
+
+
+  $( function sort(){
+    $( '.item#droppable' ).sortable();
+    $( '.item#droppable' ).disableSelection();
+  } );
+  function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+  function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+  function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+
+        thisdiv = ev.target;
+        $(document.getElementById(data)).insertBefore(thisdiv);
+    }
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#draggable *").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
