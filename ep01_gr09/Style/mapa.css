@@ -87,7 +87,7 @@ tener elementos de style diferentes al resto de la barra*/
 }
 /*FIN BOTONES LOGIN SIGNUP*/
 
-
+/*POP UPS*/
 .modal{
     position: fixed;
     top: 50%;
@@ -116,7 +116,6 @@ tener elementos de style diferentes al resto de la barra*/
   }
 
   .modal-header .title {
-
     font-size: 1.25rem;
     font-weight: bold;
   }
