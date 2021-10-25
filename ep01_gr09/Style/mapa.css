@@ -88,7 +88,7 @@ tener elementos de style diferentes al resto de la barra*/
 /*FIN BOTONES LOGIN SIGNUP*/
 
 
-.modal {
+.modal{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -100,6 +100,7 @@ tener elementos de style diferentes al resto de la barra*/
     background-color: white;
     width: 500px;
     max-width: 80%;
+    display: block;
   }
   
   .modal.active {
@@ -132,6 +133,7 @@ tener elementos de style diferentes al resto de la barra*/
   
   .modal-body {
     padding: 10px 15px;
+    font-weight: bold;
   }
 
   input[type=text], input[type=password] {
@@ -151,6 +153,14 @@ tener elementos de style diferentes al resto de la barra*/
     cursor: pointer;
     width: 100%;
   }
+  .modal-body .reset{
+    background-color: #bd0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 30%;
+  }
   
   button:hover {
     opacity: 0.8;
@@ -168,7 +178,7 @@ tener elementos de style diferentes al resto de la barra*/
     pointer-events: none;
   }
   
-  #overlay.active {
+  #overlay.active  {
     opacity: 1;
     pointer-events: all;
   }
@@ -196,8 +206,9 @@ tener elementos de style diferentes al resto de la barra*/
     width: 100%;
     padding: 6px 10px;
 }
+
 ::placeholder {
-    font-size: 2vw;
+    font-size: 1vw;
     color: #555B6E;
     opacity: 0.7; 
 }

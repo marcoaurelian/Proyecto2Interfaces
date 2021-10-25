@@ -12,7 +12,7 @@
         
     </head>
     
-    <body>
+    <body onload="disableSubmit()">
         <!--Botones principales-->
         <header>
             <div class="menu">
@@ -27,7 +27,7 @@
       <!--Botones de login y signup-->
         <div class="botones">
             <ul>
-                <li><a href='#' class="signup-btn"><span> Sign Up</span>
+                <li><a data-modal-target="#modal2" class="signup-btn"><span> Sign Up</span>
                 </a></li>
                 <li><a data-modal-target="#modal" class="login-btn"> <span> Log In</span>
                 </a></li>
@@ -49,6 +49,58 @@
               <input type="password" placeholder="Enter Password" name="psw" required>
           
               <button class="login" type="submit">Login</button>
+            
+            </form>
+          </div>
+        </div>
+        <div id="overlay"></div>
+
+      <!--Popup signup-->
+        <div class="modal2" id="modal2">
+          <div class="modal-header">
+            <div class="title">Sign Up</div>
+            <button data-close-button class="close-button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form action="action_page.php" method="post">
+              <p>Información de la cuenta</p><br>
+
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+
+              <p>Información personal</p> <br>
+              <label for="nombre">Nombre</label>
+              <input type="text" placeholder="Tu Nombre" name="nombre" required>
+              
+              <label for="email">Email</label>
+              <input type="text" placeholder="email" name="email" required>
+              
+              <label for="bdate">Birth Date</label> <br>
+              <input type="date" name="bdate" required>
+
+              <form action="/action_page.php"> <br> <br>
+                <label for="img">Select image:</label>
+                <input type="file" id="img" name="img" accept="image/*">
+              </form> <br>
+              
+              <form action="/action_page.php">
+                <label for="intereses">Me Interesa:</label>
+                <select name="intereses" id="intereses">
+                  <option value="Turismo Cultural">Turismo Cultural</option>
+                  <option value="Turismo Ambiental">Turismo Ambiental</option>
+                  <option value="Turismo Histórico">Turismo Histórico</option>
+                  <option value="Turismo de Negocios">Turismo de Negocios</option>
+                </select>
+                <br>
+              </form> <br>
+
+              <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree Terms & Coditions
+              <br>
+              <button class="reset" type="reset">Reset</button>
+              <button class="login" type="submit">Sign Up</button>
             
             </form>
           </div>
