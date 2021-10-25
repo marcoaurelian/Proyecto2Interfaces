@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: left;
+    background: #01172F;
+}
+body{
+    background: #FAF9F9;
+}
+
+/*MENU*/
+.menu ul{
+    display:inline-flex;
+    margin: 3%
+}
+.menu ul li{
+    font-size: 2vw;
+    list-style-type: none;
+    margin: 0 1vw;
+    color:  #FAF9F9;
+    cursor: pointer;
+    display: block;
+    transition: 0.7s;
+}
+.menu ul li:hover {
+    transform: scale(1.2);
+}
+.logo img{
+    width: 3vw;
+    transform:scale(300%);
+    margin-top: -7px;
+    margin-right: 48px;
+}
+
+/*FIN MENU*/
+
+/*Botones de signup y login. Están separados para poder
+tener elementos de style diferentes al resto de la barra*/
+/*Efecto de pop-up al pasar el ratón por encima*/
+
+.botones ul li :hover{
+    transform: scale(1.2);
+}
+.signup-btn{
+    transition: 0.7s; /*Transición para el efecto de pop-up*/
+    font-size: 2vw;
+    top:2.5vw;
+    right:4vw;
+    position:absolute;
+    text-decoration: none;
+    color: black;
+    border:2px solid transparent;
+    border-radius:20px ;
+    background-image: linear-gradient(#FFD6BA,#FFD6BA);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.signup-btn span{
+    display: block;
+    padding: 0.5vw 1vw;
+}
+
+.login-btn{
+    cursor: pointer;
+    transition: 0.7s;
+    font-size: 2vw;
+    top:2.5vw;
+    right:15vw;
+    position:absolute;
+    text-decoration: none;
+    color: black;
+    border:3px solid transparent;
+    border-radius:20px ;
+    background-image: linear-gradient(#FFD6BA,#FFD6BA);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.login-btn span{
+    display: block;
+    padding: 0.5vw 1vw;
+}
+/*FIN BOTONES LOGIN SIGNUP*/
+
+/*POP UPS*/
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    display: block;
+  }
+
+  .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 1px solid black;
+  }
+
+  .modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: black;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .modal-body {
+    padding: 10px 15px;
+    font-weight: bold;
+  }
+
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  .modal-body .login{
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+  }
+  .modal-body .reset{
+    background-color: #bd0d0d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 30%;
+  }
+
+  button:hover {
+    opacity: 0.8;
+  }
+
+  #overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+
+  #overlay.active  {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+
+/*Barra de búsqueda*/
+
+.topnav {
+    margin-bottom: 100px;
+    margin-left: 30%;
+    width: 20%;
+    background-color: #FFD6BA;
+    width: 35%;
+    height: 4vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.topnav input[type=text] {
+    all: unset;
+    font: 16px system-ui;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+}
+
+::placeholder {
+    font-size: 1vw;
+    color: #555B6E;
+    opacity: 0.7;
+}
+.topnav button {
+    all: unset;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+}
+
+/*Fin barra de búsqueda*/
+
+/*MAPA*/
+.mapadiv{
+    display: inline-flex;
+    background: transparent;
+    position: relative;
+    width: 70%;
+    margin-top: -7%;
+    margin-left: 10%;
+}
+.mapadiv path{
+    fill: #B2E6D4;
+    stroke: black;
+    stroke-width: 1px;
+}
+.mapadiv :hover{
+    fill:#01172F;
+}
+/*FIN MAPA*/
+
+header p {
+    background: #689689;
+    margin: 0 0 5% 0;
+    padding: 4vw;
+    text-align: center;
+    color: #01172F;
+    text-transform: uppercase;
+    font-size: 4vw;
+    font-weight: 700;
+}
+
+
+
+/*FOOTER*/
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.footer {
+    display: inline-flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: #01172F;
+    background-color: #B2E6D4;
+    }
+
+    .footer > * {
+    flex:  1 100%;
+    }
+
+    .l-footer {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+    }
+
+    h2 {
+    font-weight: 400;
+    font-size: 15px;
+    }
+
+    .footer ul {
+    list-style: none;
+    padding-left: 0;
+    }
+
+    .footer li {
+    line-height: 2em;
+    }
+
+    .footer a {
+    text-decoration: none;
+    }
+
+    .r-footer {
+    display: flex;
+    flex-flow: row wrap;
+    }
+
+    .r-footer > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+    }
+
+    .box a {
+    color: #999;
+    }
+
+    .h-box {
+    column-count: 2;
+    column-gap: 1.25em;
+    }
+
+    .b-footer {
+    text-align: center;
+    color: #999;
+    padding-top: 50px;
+    }
+
+    .l-footer p {
+    padding-right: 20%;
+    color: #999;
+    }
+
+    @media screen and (min-width: 600px) {
+    .r-footer > * {
+    flex: 1;
+    }
+
+    .features {
+    flex-grow: 2;
+    }
+
+    .l-footer {
+    flex: 1 0px;
+    }
+
+    .r-footer {
+    flex: 2 0px;
+    }
+    }
+
+
+/*EXPERIENCIAS*/
+.exp img{
+    width: 20vw;
+}
+.exp body {
+    margin: 0;
+    display: grid;
+    font-size: 2vw;
+}
+.exp{
+    float: left;
+}
+.cell{
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 2vw;
+    padding: 1vw;
+    display:table-cell;
+    text-align: center;
+}
+.cell:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.exp:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.exp p{
+    font-size: 1.5vw;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 5vw;
+}
+.exp img{
+  display: block;
+  margin: 1vw auto 1vw auto;
+}
+.exp h4{
+    text-align: center;
+    font-family:Helvetica,serif;
+    font-size: 2vw;
+    color: #01172F;
+}
+.exp h3{
+    padding: 1vw;
+    font-size: 3vw;
+}
+.Sud{
+    padding-top:3.65vw;
+}
+.Bar{
+    padding-top:1.55vw;
+}
+.Sui p{
+    padding-bottom:4.3vw;
+}
