@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     item.addEventListener('dragend', handleDragEnd, false);
   });
   });
-
+//Buscador
 jQuery(document).ready(function () {
   jQuery('.ResultNoFound').hide();
 });
