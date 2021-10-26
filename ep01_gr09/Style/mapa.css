@@ -238,6 +238,10 @@ tener elementos de style diferentes al resto de la barra*/
 .mapadiv :hover{
     fill:#01172F;
 }
+
+.paisescursor{
+    cursor: pointer;
+}
 /*FIN MAPA*/
 
 header p {
