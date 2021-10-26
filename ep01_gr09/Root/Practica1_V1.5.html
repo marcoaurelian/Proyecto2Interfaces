@@ -62,24 +62,24 @@
             <button data-close-button class="close-button">&times;</button>
           </div>
           <div class="modal-body">
-            <form action="action_page.php" method="post">
+            <form  action="action_page.php" method="post">
               <p>Información de la cuenta</p><br>
               
               <label for="uname"><b>Username</b></label>
-              <input type="text" placeholder="Enter Username" name="uname" required>
+              <input type="text" placeholder="Enter Username" name="uname" id="user" required>
 
               <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
+              <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
 
               <p>Información personal</p> <br>
               <label for="nombre">Nombre</label>
-              <input type="text" placeholder="Tu Nombre" name="nombre" required>
+              <input type="text" placeholder="Tu Nombre" name="nombre" id="nombre" required>
 
               <label for="email">Email</label>
-              <input type="text" placeholder="email" name="email" required>
+              <input type="text" placeholder="email" name="email" id="email" required>
 
               <label for="bdate">Fecha Nacimiento</label> <br>
-              <input type="date" name="bdate" required>
+              <input type="date" name="bdate" id="bdate" required>
 
               <form action="/action_page.php"> <br> <br>
                 <label for="img">Seleccione imagen:</label>

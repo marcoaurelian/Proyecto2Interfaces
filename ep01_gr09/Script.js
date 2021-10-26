@@ -87,6 +87,19 @@ function disableSubmit() {
         thisdiv = ev.target;
         $(document.getElementById(data)).insertBefore(thisdiv);
     }
+  
+    const usuario = JSON.stringify ({
+      usuario: document.getElementById("user").value,
+      contraseña: document.getElementById("psw").value,
+      nombre: document.getElementById("nombre").value,
+      email: document.getElementById("email").value,
+      nacimiento: document.getElementById("bdate").value,
+      interes: interes,
+      foto: document.getElementById("img").value,
+    })
+
+    
+
 
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
