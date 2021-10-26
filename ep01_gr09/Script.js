@@ -59,20 +59,20 @@ function disableSubmit() {
       closeModal(modalpais)
     })
   })
-  
+
   closeModalButtons.forEach(button => {
     button.addEventListener('click', () => {
       const modalpais = button.closest('.modalpais')
       closeModal(modalpais)
     })
   })
-  
+
   function openModal(modalpais) {
     if (modalpais == null) return
     modalpais.classList.add('active')
     overlay.classList.add('active')
   }
-  
+
   function closeModal(modalpais) {
     if (modalpais == null) return
     modalpais.classList.remove('active')
@@ -145,9 +145,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
   });
 //Buscador
-jQuery(document).ready(function () {
-  jQuery('.ResultNoFound').hide();
-});
+
+jQuery('.ResultNoFound').hide();
+
 
 window.onload=function(){
   jQuery(".Busqueda").keyup(function() {
@@ -167,6 +167,7 @@ window.onload=function(){
 
     } else {
       jQuery(this).show();
+      jQuery('.ResultNoFound').hide();
           count++;
       }
     });
