@@ -36,6 +36,33 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
+/*POPUPS PAISES*/
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modalpais.active')
+  modals.forEach(modalpais => {
+    closeModal(modalpais)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const modalpais = button.closest('.modalpais')
+    closeModal(modalpais)
+  })
+})
+
+function openModal(modalpais) {
+  if (modalpais == null) return
+  modalpais.classList.add('active')
+  overlay.classList.add('active')
+}
+
+function closeModal(modalpais) {
+  if (modalpais == null) return
+  modalpais.classList.remove('active')
+  overlay.classList.remove('active')
+}
+
 function disableSubmit() {
   document.getElementById("submit").disabled = true;
  }
