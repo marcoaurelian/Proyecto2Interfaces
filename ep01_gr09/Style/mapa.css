@@ -285,7 +285,7 @@ video{
     margin-left: 1vw;
     margin-top: 0.5vw;
 }
-  
+
 /* Clear floats after image containers */
 .row::after {
     content: "";
@@ -442,4 +442,10 @@ video{
 }
 .Sui p{
     padding-bottom:4.3vw;
+}
+.ResultNoFound{
+  font-size: 30px;
+  padding: 20px;
+  color: #999;
+  text-align: center;
 }
