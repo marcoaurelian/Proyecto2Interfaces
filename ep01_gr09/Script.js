@@ -144,3 +144,31 @@ document.addEventListener('DOMContentLoaded', (event) => {
     item.addEventListener('dragend', handleDragEnd, false);
   });
   });
+
+jQuery(document).ready(function () {
+  jQuery('.ResultNoFound').hide();
+});
+
+window.onload=function(){
+  jQuery(".Busqueda").keyup(function() {
+
+  var filter = jQuery(this).val(),
+      count = 0;
+
+  jQuery('#sortable div').each(function() {
+
+  if (jQuery(this).text().search(new RegExp(filter, "i")) < 0) {
+      jQuery(this).hide();
+      if (count == 0) {
+        jQuery('.ResultNoFound').show()
+      } else {
+        jQuery('.ResultNoFound').hide()
+      }
+
+    } else {
+      jQuery(this).show();
+          count++;
+      }
+    });
+  });
+}
