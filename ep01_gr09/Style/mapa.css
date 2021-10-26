@@ -48,6 +48,7 @@ tener elementos de style diferentes al resto de la barra*/
     transform: scale(1.2);
 }
 .signup-btn{
+    cursor: pointer;
     transition: 0.7s; /*Transición para el efecto de pop-up*/
     font-size: 2vw;
     top:2.5vw;
