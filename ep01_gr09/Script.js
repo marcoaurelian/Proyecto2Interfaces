@@ -50,6 +50,8 @@ function disableSubmit() {
       }
 
   }
+
+
   $( function drag() {
   $( ".exp" ).draggable({
   cursor:'move',
