@@ -36,33 +36,6 @@ function closeModal(modal) {
   overlay.classList.remove('active')
 }
 
-/*POPUPS PAISES*/
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modalpais.active')
-  modals.forEach(modalpais => {
-    closeModal(modalpais)
-  })
-})
-
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modalpais = button.closest('.modalpais')
-    closeModal(modalpais)
-  })
-})
-
-function openModal(modalpais) {
-  if (modalpais == null) return
-  modalpais.classList.add('active')
-  overlay.classList.add('active')
-}
-
-function closeModal(modalpais) {
-  if (modalpais == null) return
-  modalpais.classList.remove('active')
-  overlay.classList.remove('active')
-}
-
 function disableSubmit() {
   document.getElementById("submit").disabled = true;
  }
@@ -114,19 +87,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     if (e.stopPropagation) {
       e.stopPropagation(); //para el buscador de redireccionar
     }
-  
-    const usuario = JSON.stringify ({
-      usuario: document.getElementById("user").value,
-      contraseña: document.getElementById("psw").value,
-      nombre: document.getElementById("nombre").value,
-      email: document.getElementById("email").value,
-      nacimiento: document.getElementById("bdate").value,
-      interes: interes,
-      foto: document.getElementById("img").value,
-    })
-
-    
-
 
     if (dragSrcEl != this) {
       dragSrcEl.innerHTML = this.innerHTML;

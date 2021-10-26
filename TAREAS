@@ -2,23 +2,23 @@ En la cabecera:
 
 o Al pinchar el botón para iniciar sesión, se abrirá una ventana pop up. Una ventana pop up o emergente es un elemento que al abrirse se superpone a la página actual 
 y su tamaño depende del contenido. En la esquina superior derecha de la ventana pop up, habrá que añadir un botón para cerrar la misma. La ventana emergente contendrá 
-un formulario pidiendo el nombre de usuario y la contraseña, y un botón.  HECHO
+un formulario pidiendo el nombre de usuario y la contraseña, y un botón.  !!MARCO!! HECHO
 
 o Al pinchar el botón, se buscará una cookie con los datos introducidos. Si no existe la cookie, se le notificará al usuario que el correo electrónico especificado no 
 está dado de alta. Si ya existe la cookie, se cerrará la ventana pop up y se cambiarán los botones para iniciar sesión y darse de alta por una imagen (la imagen de perfil
 del usuario o una por defecto si no está disponible), un texto (el nombre del usuario) y un menú de opciones. Entre las opciones, se incluirán: mi perfil, mis experiencias,
-y cerrar sesión.  
+y cerrar sesión.  !!MARCO!!
 
 o La opción mi perfil abrirá una ventana pop up con la información de la cuenta del usuario ya introducida en el formulario para darse de alta (cómo se explica a continuación).
 El usuario podrá modificar su nombre de usuario, la foto de perfil y sus intereses. Al guardar los cambios realizados, se tendrán que reflejar también en la cookie
-correspondiente.
+correspondiente. !!MARCO!!
 
 o La opción mis experiencias abrirá una ventana pop up con un listado de experiencias introducidas por el usuario y un botón para añadir una nueva. Para añadir una nueva, 
 en la misma ventana pop up se pedirá un titulo, una descripción, un lugar y una foto. La nueva experiencia se añadirá a la cabeza del listado. Todas las experiencias podrán 
-borrarse. 
+borrarse. !!MARCO!!
 
 o La opción cerrar sesión abrirá una ventana pop-up preguntando confirmación antes de cerrar la sesión actual. En caso afirmativo, se volverá al diseño de la cabecera con los
-botones para iniciar sesión y darse de alta.  
+botones para iniciar sesión y darse de alta.  !!MARCO!!
 
 o Al pinchar el botón para darse de alta, se abrirá una ventana pop up con un formulario constituido por los siguientes campos, algunos de ellos obligatorios y 
 con un cierto formato según lo que se especifica en los siguientes puntos.
@@ -32,26 +32,21 @@ con un cierto formato según lo que se especifica en los siguientes puntos.
   ● Foto de perfil (Opcional)
   ● Me interesa … (listado de opciones, como por ejemplo turismo cultural, turismo ambiental, turismo histórico, turismo de negocios, …)
 ▪ He leído y acepto las Condiciones de uso (Obligatorio)
-▪ Botones para guardar y borrar 
-HECHO
-
+▪ Botones para guardar y borrar
 ▪ Al pinchar el botón para guardar, se validará el contenido de cada uno de los campos del formulario. Si no hay errores, se cerrará la ventana pop up y se almacenará una cookie con toda la información contenida en el formulario. Si existe una cookie con el mismo correo electrónico, se le notificará al usuario que ya existe una cuenta asociada al correo electrónico especificado.
 ▪ Al pinchar el botón para borrar, se restablecerá la información inicial del formulario.
 ▪ La validación del formulario se podrá realizar mediante: HTML5, JavaScript y jQuery.
 
 ● En la primera sección:
   o El mapa tendrá que ser responsive. Atención, las coordenadas de las áreas definidas para los enlaces tendrán que mantenerse al cambiar el tamaño de la página.
-  HECHO
+
   o Al pinchar los enlaces definidos en el mapa, el contenido de las páginas externas implementadas en la práctica anterior deberá incluirse en una ventana pop up en
   la página principal. Una ventana pop up es un elemento que al abrirse se superpone a la página actual y su tamaño depende del contenido. En la esquina superior derecha
   de la ventana pop up, habrá que añadir un botón para cerrar la misma.
-  HECHO
-  
 ● En la segunda sección:
   o Al escribir un texto y darle al botón, se comprobará que el texto no está vacío y se filtrarán las experiencias de la tercera sección según la(s) palabra(s) buscada(s).
   Para ello, se esconderán las experiencias que no contienen los términos de búsqueda ni en el titulo ni en la descripción. Si ninguna experiencia cumple con los criterios,
   se enseñará un mensaje de error al usuario.
-  
 ● En la tercera sección:
   o Al pinchar la foto o en el título de cada experiencia, se abrirá una ventana pop up con el mismo diseño de la que se ha descrito para los enlaces del mapa.
   o Las experiencias podrán reordenarse mediante drag and drop.
