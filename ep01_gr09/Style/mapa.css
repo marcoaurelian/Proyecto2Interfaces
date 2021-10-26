@@ -401,17 +401,19 @@ video{
     height: 30vw;
     margin-left: 2vw;
     padding: 1vw;
-    display:table-cell;
+    display: table-cell;
     text-align: center;
 }
 .cell:hover{
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+/*
 .exp:after{
     content: "";
     display: table;
     clear: both;
 }
+*/
 .exp p{
     font-size: 1.5vw;
     text-align: center;
