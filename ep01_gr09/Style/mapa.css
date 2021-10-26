@@ -99,7 +99,7 @@ tener elementos de style diferentes al resto de la barra*/
     border-radius: 10px;
     z-index: 10;
     background-color: white;
-    width: 500px;
+    width: 40vw;
     max-width: 80%;
     display: block;
   }
@@ -384,6 +384,10 @@ video{
 
 
 /*EXPERIENCIAS*/
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
 .exp img{
     width: 20vw;
 }
